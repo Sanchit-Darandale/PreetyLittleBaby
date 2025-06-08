@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Song Player &amp; Downloader</title>
+  <title>DS Song Player &amp; Downloader</title>
   <style>
     /* Default Design Guidelines - Light and Dark Theme with toggle */
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
@@ -388,8 +388,8 @@
 </head>
 <body data-theme="light">
   <header>
-    <div class="logo" tabindex="0">Song Player &amp; Downloader</div>
-    <button id="themeToggle" aria-label="Toggle theme" title="Toggle theme">🌙</button>
+    <div class="logo" tabindex="0">DS Song Player &amp; Downloader</div>
+    <button id="themeToggle" aria-label="Toggle theme" title="Toggle theme">🖤</button>
   </header>
   <main>
     <section aria-label="Search Songs">
@@ -417,7 +417,7 @@
         <button type="submit" class="search-button" aria-label="Search Songs">Search</button>
       </form>
       <div id="aboutSection">
-        <p>Welcome! Use the search above to find songs by name or link. Stream audio or video and download your favorite tracks effortlessly.</p>
+        <p>This website is a personal project developed by me, a student passionate about web development. I’m still learning and growing, exploring new technologies with enthusiasm. Though I’m not yet a professional, I’m dedicated to improving my skills every day. This site reflects my journey and commitment to coding. Thank you for stopping by and checking out my work! ♥️</p>
       </div>
     </section>
 
@@ -466,9 +466,9 @@
 
   <script>
     // Configuration: Insert your API KEYS here
-    const SPOTIFY_CLIENT_ID = ''; // INSERT YOUR SPOTIFY CLIENT ID
-    const SPOTIFY_CLIENT_SECRET = ''; // INSERT YOUR SPOTIFY CLIENT SECRET
-    const YOUTUBE_API_KEY = ''; // INSERT YOUR YOUTUBE API KEY
+    const SPOTIFY_CLIENT_ID = '031cec83776147258a0bc6a4a9c258c6'; // INSERT YOUR SPOTIFY CLIENT ID
+    const SPOTIFY_CLIENT_SECRET = 'f6faf8eb6e4a48449050732898f48c9a'; // INSERT YOUR SPOTIFY CLIENT SECRET
+    const YOUTUBE_API_KEY = 'AIzaSyCf0q5RTWqtev0_9gzdSz-B_sZHqzSYUGg'; // INSERT YOUR YOUTUBE API KEY
 
     // DOM elements
     const themeToggle = document.getElementById('themeToggle');
@@ -510,7 +510,7 @@
     function setTheme(theme) {
       htmlEl.setAttribute('data-theme', theme);
       localStorage.setItem('theme', theme);
-      themeToggle.textContent = theme === 'dark' ? '☀️' : '🌙';
+      themeToggle.textContent = theme === 'dark' ? '🤍' : '🖤';
       themeToggle.setAttribute('aria-label', `Switch to ${theme === 'dark' ? 'light' : 'dark'} theme`);
     }
     themeToggle.addEventListener('click', () => {
